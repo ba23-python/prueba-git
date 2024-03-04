@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: Slack-Larsseit,
+    sans-serif;
+  background-color: rgb(73,14,82);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #868484;
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+nav, .servicios, .presentacion {
+  width: 80%;
+  margin: auto;
+}
+
+.titulo-servicios, .presentacion {
+  margin-bottom: 10%;
+}
+
+header {
+    background-color: rgb(73,14,82);
+    position: fixed;
+    top: 0;
+    border-top: 30px solid rgb(73,14,82);
+    width: 100%;
+}
+
+.header {
+  position: relative;
+  /* Ensure positioning context for absolute positioning */
+}
+
+.hamburger-icon {
+  display:flex;
+  position: absolute;
+  top: 10px;
+  /* top position */
+  right: 30px;
+  /*  right position */
+  cursor: pointer;
+  /* Add cursor pointer for better user interaction */
+}
+
+.fa-bars {
+    font-size: 20px;
+   color: white;
+  
+}
+
+#menu{
+    display: flex;
+    
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-left:30px;
+}
+
+.nav-links {
+    display: none;
+}
+
+.c-nav--signed-out {
+    display: none;
+   }
+
+
+#nav_menu_btn{
+    display:flex;
+    
+}
+
+.nav-menu_ul{
+    display: none;
+    padding: 0;
+}
+.nav-menu_ul li {
+  margin-right: 20px;
+  /* Add spacing between menu items as needed */
+}
+
+
+h1{
+    
+    color: white;
+    font-size: 3rem !important;
+    font-family: Slack-Larsseit, sans-serif;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.8px;
+    margin-bottom: 1rem;
+}
+
+.u-text--yellow{
+    font-size: 3rem;
+    font-family: Slack-Larsseit, sans-serif;
+    color: #ecb22e!important;
+} /* color amarillo de la frase en h1*/
+
+
+
+  .under{
+    flex-direction: column;
+    font-family: Slack-Larsseit, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 1em;
+
+  }
+
+  p {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: 0;
+    font-family: Slack-Larsseit, sans-serif;
+    color: white;
+    margin-bottom: 1em;
+  }
+
+  .under_btn { 
+    font-size: 3rem;
+    font-family: Slack-Larsseit, sans-serif;
+    color: white;
+
+  }
+
+     
+/*buttons in body*/
+.cta-container{
+    display:flex;
+    margin: 150px;
+     width: 500px;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     flex-wrap: wrap;
+     width: 100%; /* Set width to 100% for mobile-first */
+    
+}
+
+.btn-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .btn-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+
+.btn, .btn-principal, .btn-secundario_google  {
+  border: none;
+  border-radius: 2px;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: transform 100ms;
+  width:100px;
+}
+
+.btn:hover, .btn-principal:hover, .btn-secundario:hover {
+  transform: scale(1.1);
+}
+
+.btn-principal {
+    
+    flex-direction: column; /* Change to column for mobile */
+    align-items: center; /* Center items horizontally */
+    width: 100%;
+    margin-top: 5rem!important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #4285F4; /* Assuming Google's color */
+    color: rgb(97,31,105);
+    border: 1px solid black;
+    max-width: 500px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.googlelogo {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: 20px;
+  margin-left: 5px;
+  /* Adjust the left positioning as needed */
+  transform: translate(0, -50%);
+  max-height: 100%;
+  width: 15px;
+  height: 15px;
+}
+
+    .btn-secundario_google{
+        display:flex;
+        flex-direction: column; /*  column for mobile */
+        text-align: center;
+        justify-content: center;
+        align-items: center; /* Center items horizontally */
+        width: 100%;
+        border-radius: 5px;
+        background-color: white;
+        color: rgb(31, 94, 105);
+        border: 1px solid black;
+        background-color: white:
+        padding: 15px;
+        width:100%;
+        max-width: 500px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        gap:10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size:15px;
+    
+        
+      }
+   
+
+.logo {
+  width: 100px;
+  height: 30px;
+}
+
+
+.wrapper {
+  background-color: rgb(73,14,82);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+}
+
+nav ul a {
+  padding: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+nav ul a:hover {
+  color: #6495ED;
+  transform: scale(1.1);
+}
+
+.presentacion {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+  
+}
+
+.flex-item1{
+    background-color: rgb(73,14,82);
+}
+
+
+
+.presentacion .flex-item2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.presentacion .flex-item1 h1 {
+ 
+  padding-right: 20px;
+  font-size: 4rem;
+}
+
+.presentacion p {
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 1025px) {
+
+  /* Hide the hamburger icon and show the nav-menu_ul */
+  .hamburger-icon {
+    display: none;
+  }
+
+  .c-nav--signed-out {
+    display: flex;
+    justify-content: space-between;
+    /* Add space between the elements */
+    align-items: center;
+  }
+
+  .c-nav--signed-out__link {
+    font-size: 16px;
+    margin-right: 20px;
+    /* Add spacing between links */
+    background-color: rgb(73, 14, 82);
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Slack-Larsseit, sans-serif;
+    margin-right: 20px;
+  }
+
+  .btn-probarlo {
+    background-color: #fff;
+    border: 2px solid rgb(84, 21, 84);
+    /* Adjust border color as needed */
+    color: rgb(84, 21, 84);
+    padding: 19px 40px 20px;
+    font-family: Slack-Larsseit, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 4px;
+  }
+
+  .c-button.v--left {
+    background-color: rgb(84, 21, 84);
+    border: 1px solid #fff;
+    /* Adjust border color as needed */
+    color: #fff;
+    padding: 19px 40px 20px;
+    /* Adjust padding as needed */
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 4px;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+
+
+
