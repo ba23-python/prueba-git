@@ -1,0 +1,17 @@
+
+
+
+
+$slack-color: rgb(84, 21, 84);
+$font-stack: "Larsseit", sans-serif;
+
+body{
+  background-color: $slack-color;
+  font-family: $font-stack;
+}
+
+.header{
+  background-color: $slack-color;
+  font-family: $font-stack;
+
+}

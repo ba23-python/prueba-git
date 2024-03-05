@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/larsseit-font-family");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Larsseit", sans-serif;
+}
+
+body {
+  background-color: rgb(84, 21, 84);
+}
+
+main {
+  display: inline-block;
+  background: rgb(84, 21, 84);
+  height: 90vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.u-text--yellow {
+  color: #ecb22e !important;
+} /* color amarillo de la frase en h1*/
+/* TRANSITION*/
+a,
+.btn {
+  transition: 300ms ease;
+}
+
+/* DESKTOP NAV*/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav_menu_btn {
+  display: flex;
+}
+
+.nav-links,
+.nav-links,
+.c-nav--signed-out {
+  display: none;
+}
+
+.c-nav--signed-out {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: #d84545;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 3rem;
+  color: #d84545;
+  width: 150px;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+.header {
+  background-color: rgb(84, 21, 84);
+}
+
+/*navigation*/
+.main-display-h1 {
+  padding: 150px;
+  color: white;
+  font-size: 2.75rem !important;
+  font-family: Slack-Larsseit, sans-serif;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.8px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 25rem) {
+  .main-display-h1 {
+    font-size: calc(2rem + 12 * (100vw - 400px) / 624);
+  }
+  .billboard-para {
+    font-weight: 400;
+    line-height: 1.444;
+    letter-spacing: -0.2px;
+    margin-top: 0;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .cta-container {
+    margin: 150px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%; /* Set width to 100% for mobile-first */
+    display: flex;
+  }
+  .button1 {
+    display: flex;
+    flex-direction: column; /* Change to column for mobile */
+    align-items: center; /* Center items horizontally */
+    width: calc(60% + 90px);
+    margin-top: 5rem !important;
+    width: calc(60% + 90px);
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(97, 31, 105);
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    max-width: 500px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  .button2 {
+    color: white;
+    margin-top: 0.5rem !important;
+    margin-left: 0;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(67, 133, 244);
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    max-width: 500px;
+    letter-spacing: 2px;
+  }
+}
+@media screen and (min-width: 25rem) and (width: 412px) and (height: 915px) {
+  .cta-container {
+    width: 100%;
+  }
+  /* SECTIONS */
+}
+@media screen and (min-width: 25rem) and (width: 412px) and (height: 915px) and (width: 481px) and (height: 915px) {
+  .nav-links, .menu-links {
+    display: none;
+  }
+}
+@media screen and (min-width: 25rem) and (width: 412px) and (height: 915px) {
+  section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  .section-container {
+    display: flex;
+  }
+}
+body {
+  background-color: rgb(84, 21, 84);
+}
+
+@media screen and (min-width: 1025px) {
+  .nav_menu_btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 25rem) {
+  .nav-links,
+  .c-nav--signed-out {
+    display: flex;
+  }
+  .billboard-para {
+    font-size: calc(1.125rem + 2 * (100vw - 400px) / 624);
+  }
+}
+@media screen and (min-width: 64rem) {
+  .billboard-para {
+    font-size: 1.25rem;
+  }
+}/*# sourceMappingURL=main.css.map */
