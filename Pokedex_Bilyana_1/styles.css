@@ -1,0 +1,175 @@
+/*Habia multiplicado 4 veces el div <div class="pokemon"> para que pueda hacer los ajustes del css y el responsive media quieries.
+una vez hechos, he borrado y he dehado solo un conjunto de <div class="pokemon"> ya que con el JS se me van a crear dinamicamente los divs   */
+
+
+body {
+    background-color: rgb(25, 221, 201);
+    margin: 0;
+    font-family: rubik;
+    color: white;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+}
+
+/*MAIN*/
+
+main{
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/*newly added*/
+
+.pokemon-imagen img {
+    width: 100%;
+    max-width: 6rem;
+
+}
+
+.pokemon-todos {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna en mobile*/
+    gap: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+@media screen and (min-width: 470px){
+    .pokemon-todos {
+        grid-template-columns: 1fr 1fr;
+    }
+} /*para tamaños pantalla >470px que aparecen 2 columnas */
+
+@media screen and (min-width: 700px) {
+    .pokemon-todos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} /*para tamaños pantalla >700px que aparecen 3 columnas */
+
+.pokemon{
+    text-transform: uppercase;
+    border-radius: 1rem;
+    background-color: beige;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.25);
+    color: rgb(25, 221, 201);
+    padding-block: 1rem;
+}
+
+.pokemon-imagen {
+    padding-inline:1rem;
+    display: flex;
+    justify-content: center;
+
+} /*centra la imagen en la casilla en tamaños responsive */
+
+.pokemon-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-inline: 1rem; /*hace que el texto no sale pegado a izq*/
+    align-items: center; /*esta centrando los elementos*/
+    text-align: center; /*esta centrando el texto*/
+
+}
+
+.pokemon-id {
+    background-color: rgb(213, 148, 125);
+    /* background-color: rgb(215, 249, 245); */
+    padding: .25rem .5rem; /*ajusta el tamaño colorado del id 25 */
+    border-radius: 100vmax;
+
+} /*pone bonito el id con border y color*/
+
+.nombre-contenedor {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+} /*hace que el id y el nombre salen en una fila en cualquier tamaño*/
+
+.pokemon-tipos{
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: .75rem;
+} /* ajusta los tipos electric y fighting para que salgan en una fila*/
+
+
+.electric-tipo {
+    color: rgb(243, 151, 117);
+}
+
+.fighting-tipo {
+    color: rgb(195, 30, 30);
+}
+    
+
+
+
+/*old ones fromn the template not needed .card {
+    list-style: none;
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #222;
+    text-align: center;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.card-subtitle {
+    font-weight: lighter;
+    color: #666;
+    margin-top: 5px;
+}
+
+.card-image {
+    height: 180px;
+}
+
+#pokedex {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+
+    60% {
+        transform: translateY(-2px);
+    }
+
+    80% {
+        transform: translateY(-0px);
+    }
+}*/
